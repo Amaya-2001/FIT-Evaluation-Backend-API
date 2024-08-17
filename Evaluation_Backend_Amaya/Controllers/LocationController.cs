@@ -83,5 +83,21 @@ namespace Evaluation_Backend_Amaya.Controllers
             }
         }
 
+        [HttpGet("code")]
+        public IActionResult getLocationDetails([FromQuery] string code)
+        {
+            using (IDbConnection db = new SqlConnection(DatabaseHelper.sDbConnectionString))
+            {
+                try
+                {
+                    var locationDetails = db.QueryFirstOrDefault<Location>("SELECT Code, Name FROM tblLocation WHERE Code = @code", new {code});
+
+                    return Json(locationDetails);
+                }
+                catch (Exception ex) { return StatusCode(StatusCodes.Status500InternalServerError, new {message = ex.Message}); 
+                }
+            }
+        }
+
     }
 }
