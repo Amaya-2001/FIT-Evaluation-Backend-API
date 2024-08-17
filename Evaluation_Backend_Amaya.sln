@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evaluation_Backend_Amaya", "Evaluation_Backend_Amaya\Evaluation_Backend_Amaya.csproj", "{03FA519E-4624-45D4-BD24-67FBD36EBDBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03FA519E-4624-45D4-BD24-67FBD36EBDBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03FA519E-4624-45D4-BD24-67FBD36EBDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03FA519E-4624-45D4-BD24-67FBD36EBDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03FA519E-4624-45D4-BD24-67FBD36EBDBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F3759D0-917E-4F17-B28B-4CDCF4571880}
+	EndGlobalSection
+EndGlobal
