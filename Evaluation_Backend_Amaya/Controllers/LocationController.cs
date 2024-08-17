@@ -62,7 +62,7 @@ namespace Evaluation_Backend_Amaya.Controllers
                     if (String.IsNullOrWhiteSpace(key))
                     {
                         var autoCompleteLocations = db.Query<AutoCompleteLocations>
-                            ("SELECT Code,'(' + CONVERT(VARCHAR,Code) + ') ' + Name label " +
+                            ("SELECT Code,Name,'(' + CONVERT(VARCHAR,Code) + ') ' + Name label " +
                             "FROM tblLocation ORDER BY Code").ToList();
 
                         return Ok(autoCompleteLocations);
@@ -70,7 +70,7 @@ namespace Evaluation_Backend_Amaya.Controllers
                     else
                     {
                         var autoCompleteLocations = db.Query<AutoCompleteLocations>
-                           ("SELECT Code,'(' + CONVERT(VARCHAR,Code) + ') ' + Name label " +
+                           ("SELECT Code,Name,'(' + CONVERT(VARCHAR,Code) + ') ' + Name label " +
                            "FROM tblLocation ORDER BY Code", new {key}).ToList();
 
                         return Ok(autoCompleteLocations);
